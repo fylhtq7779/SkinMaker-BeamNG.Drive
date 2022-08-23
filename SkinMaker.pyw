@@ -34,8 +34,8 @@ def make_skin():
     if name:
         with open('template/template.jbeam', 'r') as file:
             repl = file.read().replace('RAD', 'This skin make by computer, the future is near')
-            repl = file.read().replace('AUT', 'Program by fylhtq7779')
-            repl = file.read().replace('NAME', name)
+            repl = repl.replace('AUT', 'Program by fylhtq7779')
+            repl = repl.replace('NAME', name)
             repl = repl.replace('GNAM', game_name)
             repl = repl.replace('CARSS', current_car)
         with open(jbeam_path, 'w') as file:
