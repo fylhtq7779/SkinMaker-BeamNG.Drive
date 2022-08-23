@@ -1,0 +1,40 @@
+{
+  "roamer.skin.SKINNAME" : {
+    "name" : "roamer.skin.SKINNAME",
+    "mapTo" : "roamer.skin.SKINNAME",
+    "class" : "Material",
+    "persistentId" : "c033f0bf-31d0-4a1b-9a91-595e8f6f69f6",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/roamer/roamer_main_ao.data.png",
+        "baseColorMap": "/vehicles/roamer/roamer_main_b.color.png",
+        "metallicMap": "/vehicles/roamer/roamer_main_m.data.png",
+        "metallicFactor": 1,
+        "roughnessFactor": 1,
+        "normalMap": "vehicles/roamer/roamer_n.dds",
+        "roughnessMap": "/vehicles/roamer/roamer_main_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/roamer/roamer_main_ao.data.png",
+        "useAnisotropic": true,
+        "diffuseMapUseUV": 1,
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor":0.02,
+        "metallicFactor": 0.6,
+        "clearCoatMap": "/vehicles/roamer/roamer_main_cc.data.png",
+        "normalMap": "vehicles/roamer/roamer_n.dds",
+        "opacityMap": "/vehicles/roamer/roamer_main_c.data.png",
+        "baseColorMap": "vehicles/roamer/SKINNAME/roamer_skin_SKINNAME.dds",
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+}

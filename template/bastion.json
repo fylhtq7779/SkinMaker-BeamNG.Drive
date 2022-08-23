@@ -1,0 +1,45 @@
+{
+  "bastion.skin.SKINNAME": {
+    "name": "bastion.skin.SKINNAME",
+    "mapTo": "bastion.skin.SKINNAME",
+    "class": "Material",
+    "persistentId": "5c15b37e-b698-4bd3-83a8-702c9d774f53",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/bastion/bastion_main_ao.data.png",
+        "baseColorMap": "/vehicles/bastion/bastion_main_b.color.png",
+        "colorPaletteMapUseUV": 1,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/bastion/bastion_main_m.data.png",
+        "normalMap": "vehicles/bastion/bastion_main_nm.normal.png",
+        "roughnessMap": "/vehicles/bastion/bastion_main_r.data.png"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/bastion/bastion_main_ao.data.png",
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/vehicles/bastion/SKINNAME/bastion_skin_SKINNAME.png",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/bastion/bastion_main_cc.data.png",
+        "clearCoatRoughnessFactor": 0.100000001,
+        "colorPaletteMapUseUV": 1,
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 1,
+        "metallicMap": "vehicles/bastion/bastion_main_m.data.png",
+        "normalMap": "/vehicles/bastion/bastion_main_nm.normal.png",
+        "opacityMap": "/vehicles/bastion/bastion_main_c.data.png"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

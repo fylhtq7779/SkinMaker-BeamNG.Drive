@@ -1,0 +1,38 @@
+{
+  "dryvan.skin.SKINNAME" : {
+    "name" : "dryvan.skin.SKINNAME",
+    "class" : "Material",
+    "mapTo" : "dryvan.skin.SKINNAME",
+    "persistentId" : "2c1716b6-6515-4920-a39c-202ee48ec78c",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "vehicles/dryvan/dryvan_ao.data.png",
+        "baseColorMap": "vehicles/dryvan/dryvan_b.color.png",
+        "metallicMap": "vehicles/dryvan/dryvan_m.data.png",
+        "metallicFactor": 1,
+        "roughnessFactor": 1,
+        "normalMap": "vehicles/dryvan/dryvan_nm.normal.png",
+        "roughnessMap": "vehicles/dryvan/dryvan_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/dryvan/dryvan_ao.data.png",
+        "baseColorMap": "vehicles/dryvan/SKINNAME/dryvan_skin_SKINNAME.dds",
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 0.8,
+        "roughnessFactor": 0.6,
+        "normalMap": "vehicles/dryvan/dryvan_nm.normal.png",
+        "opacityMap": "vehicles/dryvan/dryvan_c.data.png",
+        "useAnisotropic": true
+       },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  }
+}

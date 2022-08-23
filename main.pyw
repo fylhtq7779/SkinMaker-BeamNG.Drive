@@ -84,13 +84,19 @@ def init_car():
         current_car = 'coupe'
         print(current_car)
 
+    if current_car_name == 'Civetta Bolide':
+        current_car = 'bolide'
+        print(current_car)
+
 
 cars = (
-'Autobello Piccolina', 'Burnside Special', 'Cherrier Vivace/Tograc', 'Civetta Bolide', 'ETK 800 Series', 'ETK K-Series',
-'ETK I-Series', 'Ibishu 200BX', 'Ibishu Covet', 'Ibishu Hopper', 'Ibishu Pessima', 'Ibishu Miramar', 'Ibishu Pessima',
-'Ibishu Pigeon', 'Ibushu Wigeon', 'Bruckell LeGran', 'Bruckell Moonhawk', 'Hirochi SBR4', 'Hirochi Sunburst',
-'Gavril H-Series', 'Gavril Bluebuck', 'Gavril Grand Marshal', 'Gavril T-Series', 'Gavril D-Series', 'Gavril Roamer',
-'Gavril Barstow', 'Soliad Wendover', 'Wentward DT40L')
+    'Autobello Piccolina', 'Burnside Special', 'Cherrier Vivace/Tograc', 'Civetta Bolide', 'ETK 800 Series',
+    'ETK K-Series',
+    'ETK I-Series', 'Ibishu 200BX', 'Ibishu Covet', 'Ibishu Hopper', 'Ibishu Pessima', 'Ibishu Miramar',
+    'Ibishu Pessima',
+    'Ibishu Pigeon', 'Ibushu Wigeon', 'Bruckell LeGran', 'Bruckell Moonhawk', 'Hirochi SBR4', 'Hirochi Sunburst',
+    'Gavril H-Series', 'Gavril Bluebuck', 'Gavril Grand Marshal', 'Gavril T-Series', 'Gavril D-Series', 'Gavril Roamer',
+    'Gavril Barstow', 'Soliad Wendover', 'Wentward DT40L')
 
 root = tk.Tk()
 
