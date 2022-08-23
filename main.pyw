@@ -209,7 +209,7 @@ cars = (
 root = tk.Tk()
 
 root.geometry(f"300x400+1300+700")
-root.title('Skin Creator v1')
+root.title('Skin Creator v1 by fylhtq7779')
 root.resizable(False, False)
 
 car_choice = ttk.Combobox(root, values=cars)
