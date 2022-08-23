@@ -2,10 +2,16 @@ from tkinter import ttk
 import tkinter as tk
 import tkinter.messagebox as mb
 import tkinter.filedialog as fd
-#from wand import image
+# from wand import image
 
 import shutil
 import os
+
+path = ''
+current_car = ''
+name = ''
+filename = ''
+directory = ''
 
 
 def make_skin():
@@ -37,11 +43,13 @@ def make_skin():
 
 def create_zip():
     if filename[-3:] == 'dds':
+        choose_directory()
         name_dds = current_car + '_skin_' + name + '.dds'
         shutil.copy2(filename, path + '/' + name_dds)
         shutil.make_archive(name, 'zip', 'temp')
         shutil.rmtree('temp')
         mb.showinfo(title='Успешно', message='Скин создан')
+        shutil.copy2(name+'.zip', directory)
     # elif filename[-3:] == 'png':
     #     with image.Image(filename=filename) as img:
     #         img.compression = 'dxt5'
@@ -59,6 +67,11 @@ def choose_file():
                                   filetypes=filetypes)
 
 
+def choose_directory():
+    global directory
+    directory = fd.askdirectory(title="Открыть папку", initialdir="/")
+
+
 def open_json():
     pass
 
@@ -68,7 +81,7 @@ cars = ("coupe", "etk800", "etki")
 root = tk.Tk()
 
 root.geometry(f"300x400+1300+700")
-root.title('TEST')
+root.title('Skin Creator v1')
 root.resizable(False, False)
 
 car_choice = ttk.Combobox(root, values=cars)
