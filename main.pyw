@@ -9,18 +9,20 @@ import os
 
 path = ''
 current_car = ''
+current_car_name = ''
 name = ''
 filename = ''
 directory = ''
 
 
 def make_skin():
-    global current_car
     global path
     global name
+    global current_car_name
     name = name_skin.get()
     game_name = game_name_skin.get()
-    current_car = car_choice.get()
+    current_car_name = car_choice.get()
+    init_car()
     path = 'temp/vehicles/' + current_car + '/' + name
     jbeam_path = path + '/' + current_car + '.jbeam'
     json_path = path + '/materials.json'
@@ -49,7 +51,7 @@ def create_zip():
         shutil.make_archive(name, 'zip', 'temp')
         shutil.rmtree('temp')
         mb.showinfo(title='Успешно', message='Скин создан')
-        shutil.copy2(name+'.zip', directory)
+        shutil.copy2(name + '.zip', directory)
     # elif filename[-3:] == 'png':
     #     with image.Image(filename=filename) as img:
     #         img.compression = 'dxt5'
@@ -72,11 +74,23 @@ def choose_directory():
     directory = fd.askdirectory(title="Открыть папку", initialdir="/")
 
 
-def open_json():
-    pass
+def init_car():
+    global current_car
+    if current_car_name == 'Autobello Piccolina':
+        current_car = 'autobello'
+        print(current_car)
+
+    if current_car_name == 'Ibishu 200BX':
+        current_car = 'coupe'
+        print(current_car)
 
 
-cars = ("coupe", "etk800", "etki")
+cars = (
+'Autobello Piccolina', 'Burnside Special', 'Cherrier Vivace/Tograc', 'Civetta Bolide', 'ETK 800 Series', 'ETK K-Series',
+'ETK I-Series', 'Ibishu 200BX', 'Ibishu Covet', 'Ibishu Hopper', 'Ibishu Pessima', 'Ibishu Miramar', 'Ibishu Pessima',
+'Ibishu Pigeon', 'Ibushu Wigeon', 'Bruckell LeGran', 'Bruckell Moonhawk', 'Hirochi SBR4', 'Hirochi Sunburst',
+'Gavril H-Series', 'Gavril Bluebuck', 'Gavril Grand Marshal', 'Gavril T-Series', 'Gavril D-Series', 'Gavril Roamer',
+'Gavril Barstow', 'Soliad Wendover', 'Wentward DT40L')
 
 root = tk.Tk()
 
