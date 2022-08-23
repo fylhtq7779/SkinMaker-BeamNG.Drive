@@ -1,3 +1,6 @@
+# fylhtq7779 - program
+# Beamer XD - materials file from Skin Helper
+
 from tkinter import ttk
 import tkinter as tk
 import tkinter.messagebox as mb
