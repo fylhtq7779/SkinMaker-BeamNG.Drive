@@ -64,7 +64,7 @@ def create_zip():
 
 def choose_file():
     global filename
-    filetypes = (("Изображение", "*.dds *.png"),)
+    filetypes = (("Изображение", "*.dds"),)
     filename = fd.askopenfilename(title="Открыть файл", initialdir="/",
                                   filetypes=filetypes)
 
