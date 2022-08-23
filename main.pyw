@@ -88,6 +88,114 @@ def init_car():
         current_car = 'bolide'
         print(current_car)
 
+    if current_car_name == 'Burnside Special':
+        current_car = 'burnside'
+        print(current_car)
+
+    if current_car_name == 'Cherrier Vivace/Tograc':
+        current_car = 'vivace'
+        print(current_car)
+
+    if current_car_name == 'ETK 800 Series':
+        current_car = 'etk800'
+        print(current_car)
+
+    if current_car_name == 'ETK K-Series':
+        current_car = 'etkc'
+        print(current_car)
+
+    if current_car_name == 'ETK I-Series':
+        current_car = 'etki'
+        print(current_car)
+
+    if current_car_name == 'Ibishu Covet':
+        current_car = 'hatch'
+        print(current_car)
+
+    if current_car_name == 'Ibishu Hopper':
+        current_car = 'hopper'
+        print(current_car)
+
+    if current_car_name == 'Ibishu Pessima':
+        current_car = 'midsize'
+        print(current_car)
+
+    if current_car_name == 'Ibishu Miramar':
+        current_car = 'miramar'
+        print(current_car)
+
+    if current_car_name == 'Ibishu Pigeon':
+        current_car = 'pigeon'
+        print(current_car)
+
+    if current_car_name == 'Ibishu Wigeon':
+        current_car = 'wigeon'
+        print(current_car)
+
+    if current_car_name == 'Bruckell LeGran':
+        current_car = 'legran'
+        print(current_car)
+
+    if current_car_name == 'Bruckell Moonhawk':
+        current_car = 'moonhawk'
+        print(current_car)
+
+    if current_car_name == 'Hirochi SBR4':
+        current_car = 'sbr'
+        print(current_car)
+
+    if current_car_name == 'Bruckell Moonhawk':
+        current_car = 'moonhawk'
+        print(current_car)
+
+    if current_car_name == 'Hirochi Sunburst':
+        current_car = 'sunburst'
+        print(current_car)
+
+    if current_car_name == 'Gavril H-Series':
+        current_car = 'van'
+        print(current_car)
+
+    if current_car_name == 'Gavril Bluebuck':
+        current_car = 'bluebuck'
+        print(current_car)
+
+    if current_car_name == 'Gavril Grand Marshal':
+        current_car = 'fullsize'
+        print(current_car)
+
+    if current_car_name == 'Gavril Bluebuck':
+        current_car = 'bluebuck'
+        print(current_car)
+
+    if current_car_name == 'Gavril T-Series':
+        current_car = 'semi'
+        print(current_car)
+
+    if current_car_name == 'Gavril D-Series':
+        current_car = 'pickup'
+        print(current_car)
+
+    if current_car_name == 'Gavril Roamer':
+        current_car = 'roamer'
+        print(current_car)
+
+    if current_car_name == 'Gavril Barstow':
+        current_car = 'barstow'
+        print(current_car)
+
+    if current_car_name == 'Soliad Wendover':
+        current_car = 'wendover'
+        print(current_car)
+
+    if current_car_name == 'Gavril Barstow':
+        current_car = 'barstow'
+        print(current_car)
+
+    if current_car_name == 'Wentward DT40L':
+        current_car = 'citybus'
+        print(current_car)
+
 
 cars = (
     'Autobello Piccolina', 'Burnside Special', 'Cherrier Vivace/Tograc', 'Civetta Bolide', 'ETK 800 Series',
