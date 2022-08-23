@@ -1,0 +1,40 @@
+{
+  "etki.skin.SKINNAME" : {
+    "name" : "etki.skin.SKINNAME",
+    "mapTo" : "etki.skin.SKINNAME",
+    "class" : "Material",
+    "persistentId" : "ff7724b9-8fd0-4dcc-8fbd-0c4205397ae0",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/etki/etki_main_ao.data.png",
+        "baseColorMap": "/vehicles/etki/etki_main_alt_b.color.png",
+        "metallicMap": "/vehicles/etki/etki_main_alt_m.data.png",
+        "metallicFactor": 1,
+        "roughnessFactor": 1,
+        "normalMap": "vehicles/etki/etki_main_n.normal.png",
+        "roughnessMap": "/vehicles/etki/etki_main_alt_r.data.png",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/etki/etki_main_ao.data.png",
+        "useAnisotropic": true,
+        "diffuseMapUseUV": 1,
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor":0.05,
+        "metallicFactor": 0.8,
+        "clearCoatMap": "/vehicles/etki/etki_main_cc.data.png",
+        "normalMap": "/vehicles/etki/etki_main_n.normal.png",
+        "opacityMap": "/vehicles/etki/etki_main_alt_c.data.png",
+        "baseColorMap": "vehicles/etki/SKINNAME/etki_skin_SKINNAME.dds"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 0,
+    "version": 1.5
+  },
+}

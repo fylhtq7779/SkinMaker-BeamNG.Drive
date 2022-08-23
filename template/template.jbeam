@@ -1,0 +1,11 @@
+ {
+   "CARSS_skin_NAME": {
+   "information":{
+       "authors":"NAME",
+       "name":"GNAM",
+       "value":200,
+   }
+   "slotType" : "paint_design",
+   "globalSkin" : "NAME",
+   },
+   }
