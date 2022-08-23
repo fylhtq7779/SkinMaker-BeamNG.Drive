@@ -30,6 +30,8 @@ def make_skin():
     print(jbeam_path)
     if name:
         with open('template/template.jbeam', 'r') as file:
+            repl = file.read().replace('RAD', 'This skin make by computer, the future is near')
+            repl = file.read().replace('AUT', 'Program by fylhtq7779')
             repl = file.read().replace('NAME', name)
             repl = repl.replace('GNAM', game_name)
             repl = repl.replace('CARSS', current_car)
@@ -117,7 +119,7 @@ def init_car():
         print(current_car)
 
     if current_car_name == 'Ibishu Pessima':
-        current_car = 'midsize'
+        current_car = 'pessima'
         print(current_car)
 
     if current_car_name == 'Ibishu Miramar':

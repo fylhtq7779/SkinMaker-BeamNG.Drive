@@ -1,7 +1,7 @@
  {
-   "CARSS_skin_NAME": {
+   "CARSS_skin_NAME": { 
    "information":{
-       "authors":"NAME",
+       "authors":"NAME", //RAD
        "name":"GNAM",
        "value":200,
    }
