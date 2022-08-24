@@ -42,8 +42,8 @@ def make_skin():
     game_name = game_name_skin.get()
     current_car_name = car_choice.get()
     path = 'temp/vehicles/' + current_car + '/' + name
-    init_car()
     os.makedirs(path)
+    init_car()
     make_jbeam(name, game_name, path)
     make_json(name, game_name, path)
     create_zip(name, path)
@@ -205,7 +205,7 @@ cars = (
 root = tk.Tk()
 
 root.geometry(f"300x400+1300+700")
-root.title('Skin Creator v1 by fylhtq7779')
+root.title('Skin Creator v1')
 root.resizable(False, False)
 
 car_choice = ttk.Combobox(root, values=cars)
