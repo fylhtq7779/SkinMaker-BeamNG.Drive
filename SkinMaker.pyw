@@ -1,36 +1,21 @@
 # fylhtq7779 - program
-# Beamer XD - materials file from Skin Helper
+# Beamer XD - materials and DDS file from Skin Helper
 
 from tkinter import ttk
 import tkinter as tk
 import tkinter.messagebox as mb
 import tkinter.filedialog as fd
-# from wand import image
 
 import shutil
 import os
 
-path = ''
-current_car = ''
 current_car_name = ''
-name = ''
+current_car = ''
 filename = ''
-directory = ''
 
 
-def make_skin():
-    global path
-    global name
-    global current_car_name
-    name = name_skin.get()
-    game_name = game_name_skin.get()
-    current_car_name = car_choice.get()
-    init_car()
-    path = 'temp/vehicles/' + current_car + '/' + name
+def make_jbeam(name, game_name, path):
     jbeam_path = path + '/' + current_car + '.jbeam'
-    json_path = path + '/materials.json'
-    os.makedirs(path)
-    print(jbeam_path)
     if name:
         with open('template/template.jbeam', 'r') as file:
             repl = file.read().replace('RAD', 'This skin make by computer, the future is near')
@@ -40,31 +25,38 @@ def make_skin():
             repl = repl.replace('CARSS', current_car)
         with open(jbeam_path, 'w') as file:
             file.writelines(repl)
+
+
+def make_json(name, game_name, path):
+    json_path = path + '/materials.json'
     if game_name:
         with open('template/' + current_car + '.json', 'r') as file:
             repl = file.read().replace('SKINNAME', name)
         with open(json_path, 'w') as file:
             file.writelines(repl)
-        create_zip()
 
 
-def create_zip():
+def make_skin():
+    global current_car_name
+    name = name_skin.get()
+    game_name = game_name_skin.get()
+    current_car_name = car_choice.get()
+    path = 'temp/vehicles/' + current_car + '/' + name
+    init_car()
+    os.makedirs(path)
+    make_jbeam(name, game_name, path)
+    make_json(name, game_name, path)
+    create_zip(name, path)
+
+
+def create_zip(name, path):
     if filename[-3:] == 'dds':
-        choose_directory()
         name_dds = current_car + '_skin_' + name + '.dds'
         shutil.copy2(filename, path + '/' + name_dds)
         shutil.make_archive(name, 'zip', 'temp')
         shutil.rmtree('temp')
+        shutil.copy2(name + '.zip', choose_directory())
         mb.showinfo(title='Успешно', message='Скин создан')
-        shutil.copy2(name + '.zip', directory)
-    # elif filename[-3:] == 'png':
-    #     with image.Image(filename=filename) as img:
-    #         img.compression = 'dxt5'
-    #         name_dds = current_car + '_skin_' + name + '.dds'
-    #         img.save(filename=path + '/' + name_dds)
-    #         shutil.make_archive(name, 'zip', 'temp')
-    #         shutil.rmtree('temp')
-    #         mb.showinfo(title='Успешно', message='Скин создан')
 
 
 def choose_file():
@@ -75,8 +67,7 @@ def choose_file():
 
 
 def choose_directory():
-    global directory
-    directory = fd.askdirectory(title="Открыть папку", initialdir="/")
+    return fd.askdirectory(title="Открыть папку", initialdir="/")
 
 
 def init_car():
@@ -214,7 +205,7 @@ cars = (
 root = tk.Tk()
 
 root.geometry(f"300x400+1300+700")
-root.title('Skin Creator v1')
+root.title('Skin Creator v1 by fylhtq7779')
 root.resizable(False, False)
 
 car_choice = ttk.Combobox(root, values=cars)
