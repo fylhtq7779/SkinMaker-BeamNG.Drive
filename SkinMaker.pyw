@@ -41,9 +41,9 @@ def make_skin():
     name = name_skin.get()
     game_name = game_name_skin.get()
     current_car_name = car_choice.get()
+    init_car()
     path = 'temp/vehicles/' + current_car + '/' + name
     os.makedirs(path)
-    init_car()
     make_jbeam(name, game_name, path)
     make_json(name, game_name, path)
     create_zip(name, path)
@@ -54,7 +54,7 @@ def create_zip(name, path):
         name_dds = current_car + '_skin_' + name + '.dds'
         shutil.copy2(filename, path + '/' + name_dds)
         shutil.make_archive(name, 'zip', 'temp')
-        shutil.rmtree('temp')
+        #shutil.rmtree('temp')
         shutil.copy2(name + '.zip', choose_directory())
         mb.showinfo(title='Успешно', message='Скин создан')
 
